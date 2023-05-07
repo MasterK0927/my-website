@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Incoming Effect on Scroll</title>
+	<style>
+		.incoming {
+			opacity: 0;
+			transform: translateY(50px);
+			transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+		}
+		.incoming.show {
+			opacity: 1;
+			transform: translateY(0);
+		}
+		.content {
+			height: 1000px;
+			background-color: #f2f2f2;
+			padding: 50px;
+			text-align: center;
+			font-size: 24px;
+			line-height: 1.5;
+		}
+	</style>
+	<script>
+		function isInView(element) {
+			var rect = element.getBoundingClientRect();
+			return rect.top >= 0 && rect.bottom <= window.innerHeight;
+		}
+
+		function showIncomingElements() {
+			var incomingElements = document.querySelectorAll('.incoming');
+			incomingElements.forEach(function(element) {
+				if (isInView(element)) {
+					element.classList.add('show');
+				} else {
+					element.classList.remove('show');
+				}
+			});
+		}
+
+		window.addEventListener('scroll', function() {
+			showIncomingElements();
+		});
+	</script>
+</head>
+<body>
+	<div class="content">
+		<h2>Scroll down to see the incoming effect</h2>
+		<p class="incoming">This element will appear as you scroll down the page</p>
+		<p class="incoming">This element will also appear as you scroll down the page</p>
+		<p class="incoming">And this one too!</p>
+	</div>
+</body>
+</html>

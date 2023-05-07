@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+    <title>Keshav's Website</title>
+    <link rel="stylesheet" href="css/style11.css">
+    <link rel="stylesheet" href="css/swiper-min.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="images/maskerk.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="main-container">
+        <nav class="bg">
+            <div class="right-nav">
+                <img src="images/maskerk.ico" alt="logo" class="logo">
+                <input type="radio" name="dark-Mode" id="Dark-Mode" value="3" onclick="DarkMode()">
+            </div>
+            <div class="left-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#skills-k">About</a></li>
+                    <li><a href="#contact-form">Contact</a></li>
+                    <li><a href="#" onclick="alert('Coming Soon')">Blogs</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="intro-box">
+            <img src="images/IMG-20230128-WA0057.jpg" alt="keshav-img" class="intro-img bg">
+            <div class="content-intro-box">
+                <div class="name-box" id="skills-k">
+                    <h2>Keshav Agarwal</h2>
+                </div>
+                <div class="radio-check">
+                    <div class="radio-check-one">
+                        <label>
+                            <input type="radio" name="Skills" id="skills" value="1" onclick="toggleContent('content1')"> Skills
+                        </label>
+                        <div class="radio-check-one-content" id="content1">
+                            <ul>
+                                <li>Front-End</li>
+                                <li>Custom Rom</li>
+                                <li>ML</li>
+                                <li>Linux</li>
+                                <li>Cyber-Sec</li>
+                                <li>C++</li>
+                                <li>Hacking(W)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="radio-check-two">
+                        <label>
+                            <input type="radio" name="Skills" id="About" value="2" onclick="toggleContent('content2')"> About
+                        </label>
+                        <div class="radio-check-two-content" id="content2">
+                            <div class="about-intro">
+                                <p>Myself Keshav Agarwal, 18 year old tech geek from a not so small town of India.</p>
+                            </div>
+                            <div class="icons">
+                                <ul>
+                                    <li><a href="https://www.github.com/MasterK0927" target="_blank"><img src="images/github.png" alt="github" class="logo-alt"></a></li>
+                                    <li><a href="https://www.linkedin.com/in/keshavagarwal0927" target="_blank"><img src="images/linkedin.png" alt="linkedin" class="logo-alt"></a></li>
+                                    <li><a href="https://www.instagram.com/masterK0927" target="_blank"><img src="images/maskerk.ico" alt="instagram" class="logo-alt"></a></li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="resume">
+                <a href="resume/Resume-new.pdf" download><button class="btn">Resume</button></a>
+            </div>
+        </div>
+        <div class="project" id="projects">
+            <div class="card bg">
+                <div class="box" id="particles-js"></div>
+                <div class="inner-box">
+                    <h1>Techentron OS</h1>
+                    <img src="images/techentron.jpg" alt="" class="temp">
+                    <p>
+                        An after market Android Operating System, built over AOSP, highly customisable with added security features.
+Some of the part is coded in C++ and security part is coded with Java.
+Currently it is available for the few devices running Android 10. For devices running Android 11 and 12, testing is in progress, but the major portion of the work is delayed due to the lack of time.
+                    </p>
+                    <div class="icons">
+                        <ul>
+                            <li><img src="images/cpp2.png" alt="github" class="logo-alt"></li>
+                            <li><img src="images/java.png" alt="linkedin" class="logo-alt alt2"></li>
+                            <li><img src="images/aosp.png" alt="instagram" class="logo-alt"></li>
+                            <li><img src="images/linux.png" alt="instagram" class="logo-alt"></li>
+                        </ul>
+                    </div>
+                    <a href="https://www.linkedin.com/in/keshavagarwal0927/details/projects/" target="_blank" rel="noopener noreferrer"><button class="btn">Read More</button></a>
+                </div>
+            </div>
+            <div class="card bg">
+                <div class="box" id="particles-js"></div>
+                <div class="inner-box">
+                    <h1>Drowsiness Detection</h1>
+                    <img src="images/cover.jpg" alt="" class="temp">
+                    <p>
+                        Based on python's most useful implementation i.e. AI-ML , this ML model is an example of implementation of core Supervised, Unsupervised and some portions of Reinforcement Learning. Mixed with a blend of Machine Learning Tools like OpenCV and Tensorflow.
+Working: When the vehicle driver feels dizzy, is on the verge of sleeping.
+                    </p>
+                    <div class="icons">
+                        <ul>
+                            <li><img src="images/tensorflow-2.png" alt="github" class="logo-alt"></li>
+                            <li><img src="images/python.webp" alt="linkedin" class="logo-alt"></li>
+                            <li><img src="images/bash2.png" alt="instagram" class="logo-alt"></li>
+                            <li><img src="images/js.svg" alt="instagram" class="logo-alt"></li>
+                            <li><img src="images/OpenCV.webp" alt="instagram" class="logo-alt"></li>
+                        </ul>
+                    </div>
+                    <a href="https://github.com/MasterK0927/Drowsiness-Detection-with-Realtime-GeoLocation-Alert-Sender" target="_blank" rel="noopener noreferrer"><button class="btn">Read More</button></a>
+                </div>
+            </div>
+            <div class="card bg">
+                <div class="box" id="particles-js"></div>
+                <div class="inner-box">
+                    <h1>Windows File Encryptor</h1>
+                    <img src="images/encryptor.png" alt="" class="temp">
+                    <p>
+                        The main idea behind the project was to create a File Encryptor that will encrypt your files and folder with no need of installing it (like we install various softwares for the same purpose). 
+
+Basic features of the Windows File Encryptor were:-
+
+1) The code base of the Windows File Encryptor includes BATCH Language with a mix of Environment Variables.
+                    </p>
+                    <div class="icons">
+                        <ul>
+                            <li><img src="images/bash2.png" alt="github" class="logo-alt"></li>
+                            <li><img src="images/cybersec2.png" alt="linkedin" class="logo-alt"></li>
+                            <li><img src="images/heroku.png" alt="instagram" class="logo-alt"></li>
+                            <li><img src="images/linux.png" alt="instagram" class="logo-alt"></li>
+                        </ul>
+                    </div>
+                    <a href="https://www.linkedin.com/in/keshavagarwal0927/details/projects/" target="_blank" rel="noopener noreferrer"><button class="btn">Read More</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <h1>Contact Me</h1>
+            <form id="contact-form">
+                <input type="text" placeholder="Enter your name:" class="name a1" id="name">
+                <input type="email" placeholder="Enter your email:" class="name a1" id="email">
+                <div class="text-area">
+                    <textarea name="text-area" id="" cols="30" rows="10" placeholder="Your Text Goes here" class="text-area a1"></textarea>
+                </div>
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+        <div class="swiper-card-container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-card bg">
+                            <div class="sliderText">
+                                <h3>Certficate One</h3>
+                            </div>
+                            <div class="image img-1"></div>
+                            <div class="content">
+                                <p>Web Development Bootcamp</p>
+                                <a href="#">Show</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-card bg">
+                            <div class="sliderText bg">
+                                <h3>Certficate Two</h3>
+                            </div>
+                            <div class="image img-2"></div>
+                            <div class="content">
+                                <p>Web Development MasterClass</p>
+                                <a href="#">Show</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-card bg">
+                            <div class="sliderText">
+                                <h3>Certficate Three</h3>
+                            </div>
+                            <div class="image img-3"></div>
+                            <div class="content">
+                                <p>CISCO CCNA Security for Beginners</p>
+                                <a href="#">Show</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-card bg">
+                            <div class="sliderText">
+                                <h3>Certficate Four</h3>
+                            </div>
+                            <div class="image img-4"></div>
+                            <div class="content">
+                                <p>Cyber Security course for Beginners</p>
+                                <a href="#">Show</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-card bg">
+                            <div class="sliderText">
+                                <h3>Certficate Five</h3>
+                            </div>
+                            <div class="image img-5"></div>
+                            <div class="content">
+                                <p>Certified Ethical Hacking Course</p>
+                                <a href="#">Show</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="left-footer-box">
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills-k">Skills</a></li>
+                    <li><a href="#skills-k">About</a></li>
+                </ul>
+            </div>
+            <div class="right-footer-box">
+                <a href="https://www.github.com/MasterK0927" target="_blank"><img class="icon-small" src="images/github.svg" alt=""></a>
+                <a href="https://www.linkedin.com/in/keshavagarwal0927" target="_blank"><img class="icon-small-1" src="images/linkedin.webp" alt=""></a>
+                <a href="https://www.instagram.com/masterK0927" target="_blank"><img class="icon-small" src="images/instagram.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <script src="js/index11.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 20,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
+</body>
+</html>
